@@ -1,3 +1,47 @@
-#root {
-  color: red;
+*{
+  box-sizing: border-box;
+  font-size: 1em;
+  background: WhiteSmoke;
+  margin: 1.2rem;
+}
+
+#root { 
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  color: black; 
+  margin-top: 5rem;
+}
+
+.cart {
+  width: 25%;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  background-color: white; 
+  padding: 10px;
+  text-align: center; 
+}
+
+h1 {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+p{
+  background-color: white;
+  
+}
+
+form{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10.5%; 
+}
+
+input {
+  border-color: #DCDCDC;
+  border-radius: 4px;
+  background-color: white;
+  padding: 1em;
 }
