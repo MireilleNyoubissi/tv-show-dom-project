@@ -2,31 +2,60 @@
 function setup() {
   const allEpisodes = getAllEpisodes();
   makePageForEpisodes(allEpisodes);
+  // create a search field
+  
+  const searchBar = document.getElementById("input-search");
+  
+
+
+  
+
+  searchBar.addEventListener("keyup", (e) => {
+    e.preventDefault();
+    
+    let filterValue = e.target.value.toLowerCase();
+
+
+    makePageForEpisodes(
+      allEpisodes.filter((episode) => {
+        return (
+          episode.name.toLowerCase().indexOf(filterValue) != -1 ||
+          episode.summary.toLowerCase().indexOf(filterValue) != -1
+        );
+      })
+    );
+  });
+   
+ 
+ 
+
+
 }
 
 function makePageForEpisodes(episodeList) {
+  const episode_count = document.getElementById("episode-count");
   const rootElem = document.getElementById("root");
-  rootElem.textContent = `Got ${episodeList.length} episode(s)`;
+  
  
   // empty rootElem content to clear the page.
     rootElem.textContent = "";
+    episode_count.textContent = `Got ${episodeList.length} episode(s)`;
   
   // loop through the episodeList to create each episode cart using html sample.
   episodeList.forEach(episode => {        
-    rootElem.innerHTML += 
-    `<div class = "cart">
-     <h1> ${episode.name} - S${episode.season < 10? '0' + episode.season : episode.season}E${episode.number < 10? '0' + episode.number : episode.number}</h1>
+    rootElem.innerHTML += `<div class = "cart">
+     <h1> ${episode.name} - S${
+      episode.season < 10 ? "0" + episode.season : episode.season
+    }E${episode.number < 10 ? "0" + episode.number : episode.number}</h1>
      <img src= ${episode.image.medium}>
-     <p>${episode.summary}</p>
+     ${episode.summary}
      </div>`;      
   });
+}  
   
-  let form = document.getElementById("search-form");
-  let searchBtn = document.getElementById("input-search");
-  form.appendChild(searchBtn);
-  rootElem.appendChild(form);
 
-}
-
+  
+  
+  
 
 window.onload = setup;
