@@ -13,10 +13,6 @@
   margin-top: 9rem;
 }
 
-.hide {
-  display : none;
-}
-
 .cart {
   width: 25%;
   border: 1px solid transparent;
@@ -31,7 +27,7 @@ h1 {
   padding: 10px;
 }
 
-p{
+div p{
   background-color: white;
   
 }
@@ -43,9 +39,20 @@ form{
   left: 10.5%; 
 }
 
-input {
+input,
+select {
+  border: transparent;
   border-color: #DCDCDC;
   border-radius: 4px;
   background-color: white;
   padding: 1em;
+  outline: none;
+}
+
+input:hover,
+input:active,
+select:hover,
+select:active {
+  border-color: #DCDCDC;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
