@@ -13,7 +13,7 @@
   margin-top: 9rem;
 }
 
-.cart {
+.card {
   width: 25%;
   border: 1px solid transparent;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
@@ -55,4 +55,13 @@ select:hover,
 select:active {
   border-color: #DCDCDC;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+
+
+img {
+  max-width: 100%;
 }
