@@ -5,36 +5,21 @@
   margin: 1.2rem;
 }
 
-#root { 
+#showsView { 
   display: flex;
   flex-wrap: wrap; 
-  /* justify-content: center; */
+  justify-content: center; 
   color: black; 
   margin-top: 9rem;
 }
 
 .card {
-  width: 100%;
+  width: 30%;
   border: 1px solid transparent;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
   background-color: white; 
   padding: 10px;
   text-align: center;
-}
-
-#card1 {
- display: flex; 
- background-color: white;  
-}
-
-#card2 {
-  width: 350px;
-  border: 1px solid transparent;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
-  background-color: white; 
-  padding: 20px 10px 0 25px;
-  text-align: left;
-  line-height: 1.5;
 }
 
 h1 {
@@ -46,11 +31,10 @@ div p{
   background-color: white;  
 }
 
-form{
-  display: block;
-  /* position: absolute; */
+form{  
+  position: absolute; 
   top: 0;
-  left: 10.5%; 
+  left: 3.5%; 
 }
 
 input,
@@ -70,11 +54,6 @@ select:active {
   border-color: #DCDCDC;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-option[value=""][disabled] {
-  display: none;
-}
-
 
 img {
   max-width: 100%;
