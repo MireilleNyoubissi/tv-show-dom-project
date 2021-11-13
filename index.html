@@ -3,19 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TV Show Project | My Name (My GitHub username)</title>
+    <title>TV Show Project | Mireille Nyoubissi (MireilleNyoubissi)</title>  
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
-  <body>
-    <div id="root">
+  <body> 
+    <form id="doc-form" action="">
+      <input id="input-search" type="search" placeholder="Enter your search term" autocomplete="off">
+      <select id="episode-select">
+    
+      </select>
+      <select id="shows-select">
+      
+      </select>
+      <p id = "episode-count"></p>
+    </form>
+    <div id="showsView">  
+     
     </div>
+    <div id="episodesView">  
+     
+    </div>
+
+
 
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>
 
     <!-- Loads YOUR javascript code -->
     <script src="script.js"></script>
+    <script src="shows.js"></script>
   </body>
 </html>
