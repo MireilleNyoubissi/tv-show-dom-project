@@ -9,8 +9,9 @@
   </head>
 
   <body> 
-    <form id="search-form" action="">
-      <input id="input-search" type="search" placeholder="Enter your search" autocomplete="off">
+    <button id = "backtoshows">backtoshows</button>
+    <form id="search-form" action="" style= "display: none">
+      <input id="input-search" type="search" placeholder="Enter your search term" autocomplete="off">
       <select id="episode-select">
     
       </select>
@@ -19,9 +20,14 @@
       </select>
       <p id = "episode-count"></p>
     </form>
-    <div id="root">  
+    <div id="showsView">  
      
     </div>
+    <div id="episodesView">  
+     
+    </div>
+
+
 
     <!-- Loads a provided function called getAllEpisodes() which returns all episodes -->
     <script src="episodes.js"></script>

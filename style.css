@@ -8,18 +8,33 @@
 #root { 
   display: flex;
   flex-wrap: wrap; 
-  justify-content: center;
+  /* justify-content: center; */
   color: black; 
   margin-top: 9rem;
 }
 
 .card {
-  width: 25%;
+  width: 100%;
   border: 1px solid transparent;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
   background-color: white; 
   padding: 10px;
   text-align: center;
+}
+
+#card1 {
+ display: flex; 
+ background-color: white;  
+}
+
+#card2 {
+  width: 350px;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  background-color: white; 
+  padding: 20px 10px 0 25px;
+  text-align: left;
+  line-height: 1.5;
 }
 
 h1 {
@@ -28,13 +43,12 @@ h1 {
 }
 
 div p{
-  background-color: white;
-  
+  background-color: white;  
 }
 
 form{
   display: block;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 10.5%; 
 }
